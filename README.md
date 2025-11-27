@@ -1,8 +1,5 @@
-# 📧 Outlook Draft Creator# 📧 Outlook Draft Creator# 📧 Outlook Draft Creator# 📧 Outlook Draft Creator
+# 📧 Outlook Draft Creator# 📧 Outlook Draft Creator
 
-
-
-Application for creating email drafts in local Outlook from a Web interface.
 
 
 
