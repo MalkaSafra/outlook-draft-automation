@@ -1,4 +1,4 @@
-# 📧 Outlook Draft Creator# 📧 Outlook Draft Creator# 📧 Outlook Draft Creator
+# 📧 Outlook Draft Creator# 📧 Outlook Draft Creator# 📧 Outlook Draft Creator# 📧 Outlook Draft Creator
 
 
 
@@ -6,7 +6,7 @@ Application for creating email drafts in local Outlook from a Web interface.
 
 
 
----Application for creating email drafts in local Outlook from a Web interface.אפליקציה ליצירת טיוטות מייל ב-Outlook המקומי מתוך ממשק Web.
+---Application for creating email drafts in local Outlook from a Web interface.
 
 
 
@@ -14,7 +14,7 @@ Application for creating email drafts in local Outlook from a Web interface.
 
 
 
-```------
+```---Application for creating email drafts in local Outlook from a Web interface.אפליקציה ליצירת טיוטות מייל ב-Outlook המקומי מתוך ממשק Web.
 
 outlook-draft-automation/
 
@@ -22,7 +22,7 @@ outlook-draft-automation/
 
 ├── backend/               # Node.js Server
 
-│   ├── server.js## 📂 Project Structure## 📂 מבנה הפרויקט
+│   ├── server.js## 📂 Project Structure
 
 │   └── package.json
 
@@ -30,55 +30,55 @@ outlook-draft-automation/
 
 │   ├── watcher.py
 
-│   └── requirements.txt``````
+│   └── requirements.txt```------
 
 ├── drafts/                # Drafts folder (created automatically)
 
-│   └── attachments/       # Attachment filesoutlook-draft-automation/outlook-draft-automation/
+│   └── attachments/       # Attachment filesoutlook-draft-automation/
 
 └── README.md
 
-```├── frontend/              # React Web App (in artifact above)├── frontend/              # React Web App (בartifact למעלה)
+```├── frontend/              # Web App Interface
 
 
 
----├── backend/               # Node.js Server├── backend/               # Node.js Server
+---├── backend/               # Node.js Server
 
 
 
-## 🚀 Running the Project│   ├── server.js│   ├── server.js
+## 🚀 Running the Project│   ├── server.js## 📂 Project Structure## 📂 מבנה הפרויקט
 
 
 
-### **Step 1: Install Backend**│   └── package.json│   └── package.json
+### **Step 1: Install Backend**│   └── package.json
 
 
 
-```bash├── watcher/               # Python Watcher├── watcher/               # Python Watcher
+```bash├── watcher/               # Python Watcher
 
 cd backend
 
-npm install│   ├── watcher.py│   ├── watcher.py
+npm install│   ├── watcher.py
 
 npm start
 
-```│   └── requirements.txt│   └── requirements.txt
+```│   └── requirements.txt``````
 
 
 
-✅ Backend runs on: `http://localhost:3000`├── drafts/                # Drafts folder (created automatically)├── drafts/                # תיקיית טיוטות (נוצרת אוטומטית)
+✅ Backend runs on: `http://localhost:3000`├── drafts/                # Drafts folder (created automatically)
 
 
 
-### **Step 2: Install Watcher**│   └── attachments/       # Attached files│   └── attachments/       # קבצים מצורפים
+### **Step 2: Install Watcher**│   └── attachments/       # Attachment filesoutlook-draft-automation/outlook-draft-automation/
 
 
 
-```bash└── README.md└── README.md
+```bash└── README.md
 
 cd watcher
 
-pip install -r requirements.txt``````
+pip install -r requirements.txt```├── frontend/              # React Web App (in artifact above)├── frontend/              # React Web App (בartifact למעלה)
 
 python watcher.py
 
@@ -86,7 +86,7 @@ python watcher.py
 
 
 
-✅ Watcher monitors the `drafts/` folder------
+✅ Watcher monitors the `drafts/` folder---├── backend/               # Node.js Server├── backend/               # Node.js Server
 
 
 
@@ -94,7 +94,7 @@ python watcher.py
 
 
 
-Open the `frontend/index.html` file in your browser.## 🚀 Running the Project## 🚀 הרצת הפרויקט
+Open the `frontend/index.html` file in your browser.## 🚀 Running the Project│   ├── server.js
 
 
 
@@ -102,7 +102,7 @@ Open the `frontend/index.html` file in your browser.## 🚀 Running the Project#
 
 
 
-## 🎯 How it Works### **Step 1: Install Backend**### **שלב 1: התקנת Backend**
+## 🎯 How it Works### **Step 1: Install Backend**│   └── package.json
 
 
 
@@ -110,23 +110,152 @@ Open the `frontend/index.html` file in your browser.## 🚀 Running the Project#
 
 2. **Web App sends data** to Backend (`localhost:3000`)
 
-3. **Backend creates JSON file** for each recipient in `drafts/` folder```bash```bash
+3. **Backend creates JSON file** for each recipient in `drafts/` folder```bash├── watcher/               # Python Watcher├── watcher/               # Python Watcher
 
 4. **Watcher detects new file** within 1-2 seconds
 
-5. **Watcher opens Outlook** with prepared draftcd backendcd backend
+5. **Watcher opens Outlook** with prepared draftcd backend
 
 6. **Watcher deletes file** after opening
 
-npm installnpm install
+npm install│   ├── watcher.py│   ├── watcher.py
 
 ---
 
-npm startnpm start
+npm start
 
 ## 📋 System Requirements
 
-``````
+```│   └── requirements.txt│   └── requirements.txt
+
+- **Windows** (due to Outlook COM API)
+
+- **Outlook Desktop** installed
+
+- **Node.js** (v14 and above)
+
+- **Python** (3.7 and above)✅ Backend runs on: `http://localhost:3000`├── drafts/                # Drafts folder (created automatically)├── drafts/                # תיקיית טיוטות (נוצרת אוטומטית)
+
+- **pywin32** (installed via requirements.txt)
+
+
+
+---
+
+### **Step 2: Install Watcher**│   └── attachments/       # Attached files│   └── attachments/       # קבצים מצורפים
+
+## 🔧 Troubleshooting
+
+
+
+### ❌ "Connection error: Backend not available"
+
+- Ensure Backend is running on `localhost:3000````bash└── README.md└── README.md
+
+- Check with: `curl http://localhost:3000/health`
+
+cd watcher
+
+### ❌ "Watcher doesn't detect files"
+
+- Ensure path to `drafts/` folder is correctpip install -r requirements.txt``````
+
+- Check write permissions for folder
+
+python watcher.py
+
+### ❌ "Outlook doesn't open"
+
+- Ensure Outlook is installed and configured```
+
+- Ensure `pywin32` is installed: `pip install pywin32`
+
+- Try running: `python -c "import win32com.client; print('OK')"`
+
+
+
+### ❌ "File not attached"✅ Watcher monitors the `drafts/` folder------
+
+- Ensure file is smaller than 50MB
+
+- Check that file path is correct in JSON
+
+
+
+---### **Step 3: Open Web App**
+
+
+
+## 🎥 Demo
+
+
+
+1. Fill form with multiple recipientsOpen the `frontend/index.html` file in your browser.## 🚀 Running the Project## 🚀 הרצת הפרויקט
+
+2. Upload PDF file (resume)
+
+3. Click "Create Drafts"
+
+4. Within seconds, Outlook will open with separate drafts for each recipient!
+
+---
+
+---
+
+
+
+## 🔐 Security
+
+## 🎯 How it Works### **Step 1: Install Backend**### **שלב 1: התקנת Backend**
+
+- Project runs **locally only** (`localhost`)
+
+- No cloud data storage
+
+- Files are automatically deleted after processing
+
+- Suitable for controlled work environment1. **User fills out form** in Web App
+
+
+
+---2. **Web App sends data** to Backend (`localhost:3000`)
+
+
+
+## 📝 License3. **Backend creates JSON file** for each recipient in `drafts/` folder```bash```bash
+
+
+
+Free project for personal and business use.4. **Watcher detects new file** within 1-2 seconds
+
+
+
+---5. **Watcher opens Outlook** with prepared draftcd backendcd backend
+
+
+
+## 💡 Future Improvements6. **Watcher deletes file** after opening
+
+
+
+- Mac support (via AppleScript)npm installnpm install
+
+- UI for managing draft queue
+
+- Email template support---
+
+- WebSocket for real-time updates
+
+- History savingnpm startnpm start
+
+
+
+---## 📋 System Requirements
+
+
+
+**Good luck! 🚀**``````
+
 
 - **Windows** (due to Outlook COM API)
 

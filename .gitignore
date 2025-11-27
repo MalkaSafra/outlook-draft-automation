@@ -1,4 +1,4 @@
-# Node modules
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.gitgit remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git# Node modules
 node_modules/
 backend/node_modules/
 
@@ -44,8 +44,8 @@ build/
 # package-lock.json
 # yarn.lock
 
-# Draft attachments (if they contain sensitive data)
-# drafts/attachments/
+# Drafts folder
+drafts/
 
 # Temporary files
 *.tmp
